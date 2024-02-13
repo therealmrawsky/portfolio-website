@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'Terminal';
+    src: url('./assets/fonts/Terminal.ttf') format('truetype');
+}
+
+body{
+    background-color: black;
+}
+.container{
+    text-align: center;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center;
+    display: flexbox;
+    
+    
+}
+.container-title{
+    
+}
+.title{
+    font-size: xx-large;
+}
+.subtitle{
+    font-size: large;
+    padding-bottom: 1%;
+
+}
+.heart::after {
+    display: inline-block;
+    content: 'love'; 
+    width: 35px;
+}
+
+@keyframes changeToHeart {
+    0% {
+        transform: rotate(0deg) scale(1);
+        content: 'love';
+    }
+    10% {
+        transform: rotate(36deg) scale(0.8);
+        content: 'love';
+    }
+    20% {
+        transform: rotate(72deg) scale(0.6);
+        content: 'love';
+    }
+    30% {
+        transform: rotate(108deg) scale(0.4);
+        content: 'love';
+    }
+    40% {
+        transform: rotate(144deg) scale(0.2);
+        content: 'love';    
+    }
+    50% {
+        transform: rotate(180deg) scale(0);
+        content: '\2764';    
+    }
+    60% {
+        transform: rotate(216deg) scale(0.2);
+        content: '\2764';    
+    }
+    70% {
+        transform: rotate(252deg) scale(0.4);
+        content: '\2764';    
+    }
+    80% {
+        transform: rotate(288deg) scale(0.6);
+        content: '\2764';    
+    }
+    90% {
+        transform: rotate(324deg) scale(0.8);
+        content: '\2764';    
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+        content: '\2764';    
+    }  
+}
+
+.container-title:hover .heart::after {
+    animation: changeToHeart 0.5s forwards ease-in-out;
+}
+
+.container-title .heart::after {
+    animation: changeToHeartReverse 0.5s forwards ease-in-out;
+}
+
+@keyframes changeToHeartReverse {
+    0% {
+        transform: rotate(360deg) scale(1);
+        content: '\2764';    
+    }
+    10% {
+        transform: rotate(324deg) scale(0.8);
+        content: '\2764';    
+    }
+    20% {
+        transform: rotate(288deg) scale(0.6);
+        content: '\2764';    
+    }
+    30% {
+        transform: rotate(252deg) scale(0.4);
+        content: '\2764';    
+    }
+    40% {
+        transform: rotate(216deg) scale(0.2);
+        content: '\2764';    
+    }
+    50% {
+        transform: rotate(180deg) scale(0);
+        content: 'love';    
+    }
+    60% {
+        transform: rotate(144deg) scale(0.2);
+        content: 'love';    
+    }
+    70% {
+        transform: rotate(108deg) scale(0.4);
+        content: 'love';    
+    }
+    80% {
+        transform: rotate(72deg) scale(0.6);
+        content: 'love';    
+    }
+    90% {
+        transform: rotate(36deg) scale(0.8);
+        content: 'love';    
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+        content: 'love';    
+    }
+}
+
+.container-about{
+    text-align: left;
+    position: relative;
+    font-size: 14px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center; /* Horizontally center the flex items */
+    align-items: center;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    white-space: pre-wrap;
+    line-height: 1.5;
+    width: 50%;
+    margin: 0 auto; 
+    
+}
+
+.container-projects{
+    padding-top: 10%;
+    display: grid;
+    font-size: x-large;
+    height: min-content;
+    justify-content: left;
+    grid-template-columns: repeat(2, 1fr)
+}
+.container-projects .project{
+
+}
+.container-projects img{
+    width: 20px;
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    } 
+    *{
+        font-family: Terminal;
+        color: white;
+        animation: fadeIn 1s;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+        } 
