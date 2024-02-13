@@ -164,7 +164,7 @@ body{
 
 }
 .container-projects img{
-    width: 20px;
+    width: 20%;
 }
 @-webkit-keyframes fadeIn {
     0% {opacity: 0;}
