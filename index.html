@@ -21,12 +21,40 @@ I am a passionate and dedicated software engineer with a keen interest in develo
         </div>
         <div class="container-projects">
             <div class="project">
-                Kantor.Live Api (unnoficial) <br>
-                <img src="./assets/photos/gitdumper.png"><br>
-                <a href="./">Try it!</a><br>
+                <a href="https://github.com/therealmrawsky/Kantor.Live-API-Unofficial">Kantor.Live Api (Unofficial)</a>
+                <div class="kantor"> 
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" value="gdansk">
+                <input type="checkbox" id="opened" name="opened" checked>
+                <label for="opened">Opened</label>
+                <button id="submit">Submit</button>
+                <div id="kantor"></div>
+            
+                <script>
+                    document.getElementById('submit').addEventListener('click', function() {
+                        const city = document.getElementById('city').value;
+                        const opened = document.getElementById('opened').checked;
+            
+                        fetch(`http://mrawsky.dev/get_exchange_rates?city=${city}&opened=${opened ? 'yes' : 'no'}`)
+                            .then(response => {
+                                if (!response.ok) {
+                                    throw new Error('Network response was not ok');
+                                }
+                                return response.json();
+                            })
+                            .then(data => {
+                                // Pretty print the JSON data
+                                document.getElementById('kantor').innerText = JSON.stringify(data, null, 2);
+                            })
+                            .catch(error => {
+                                console.error('There was a problem with the fetch operation:', error);
+                            });
+                    });
+                </script>
+                </div>
             </div>
             <div class="project">
-                Git Dumper Web<br>
+                <a href="https://github.com/therealmrawsky/dotGitDumper-web">Git Dumper Web</a>
                 <img src="./assets/photos/gitdumper.png"><br>
                 <a href="./git-dumper/">Try it!</a><br>
             </div>

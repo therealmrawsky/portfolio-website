@@ -163,11 +163,21 @@ body{
 .container-projects .project{
 
 }
+.container-projects .kantor{
+    position: relative;
+    top: 20%;
+}
 .container-projects img{
     width: 90%;
     border-radius: 5px;
     border: 0.125rem solid white;
 
+}
+.container-projects a {
+    text-decoration: none;
+}
+.container-projects a:hover {
+    text-decoration: underline;
 }
 @-webkit-keyframes fadeIn {
     0% {opacity: 0;}
@@ -186,3 +196,9 @@ body{
         0% {opacity: 0;}
         100% {opacity: 1;}
         } 
+input{
+    background: none;
+}
+button{
+    background: none;
+}
