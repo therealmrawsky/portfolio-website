@@ -178,7 +178,7 @@ body{
     text-decoration: underline;
 }
 .container-projects #kantor{
-    font-size: 10px;
+    font-size: 35%;
     overflow-y: scroll;
     height: 12rem;
     width: 90%;
