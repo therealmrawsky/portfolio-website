@@ -163,10 +163,6 @@ body{
 .container-projects .project{
 
 }
-.container-projects .kantor{
-    position: relative;
-    top: 20%;
-}
 .container-projects img{
     width: 90%;
     border-radius: 5px;
@@ -187,6 +183,7 @@ body{
     left: 5%;
     position: relative;
     border-radius: 5px;
+    text-align: left;
 
 }
 .container-projects #kantor:hover{
