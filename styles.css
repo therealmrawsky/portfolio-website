@@ -167,7 +167,7 @@ body{
     width: 86%;
     border-radius: 5px;
     border: 0.125rem solid white;
-    margin: 7%;
+    margin: 2%;
     position: relative;
 
 }
@@ -180,7 +180,7 @@ body{
 .container-projects #kantor{
     font-size: 35%;
     overflow-y: scroll;
-    height: 12rem;
+    height: 65%;
     width: 90%;
     left: 5%;
     position: relative;
