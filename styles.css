@@ -161,12 +161,14 @@ body{
     grid-template-columns: repeat(2, 1fr)
 }
 .container-projects .project{
-
+    
 }
 .container-projects img{
-    width: 90%;
+    width: 86%;
     border-radius: 5px;
     border: 0.125rem solid white;
+    margin: 7%;
+    position: relative;
 
 }
 .container-projects a {
@@ -184,10 +186,13 @@ body{
     position: relative;
     border-radius: 5px;
     text-align: left;
+    transition: 420ms;
+    margin: 2%;
+    border: rgba(255, 255, 255, 0.0) solid ;
 
 }
 .container-projects #kantor:hover{
-    background-color: rgba(255, 255, 255, 0.1);
+    border: rgba(255, 255, 255, 0.5) solid ;
 
 }
 @-webkit-keyframes fadeIn {
