@@ -34,7 +34,7 @@ Hi! I see <span class="eyes"></span> you stumbled onto my website. This new era 
                         const city = document.getElementById('city').value;
                         const opened = document.getElementById('opened').checked;
             
-                        fetch(`http://mrawsky.dev/get_exchange_rates?city=${city}&opened=${opened ? 'yes' : 'no'}`)
+                        fetch(`http://mrawsky.dev/get_exchange_rates?city=${city}&opened=${opened ? 'yes' : ''}`)
                             .then(response => {
                                 if (!response.ok) {
                                     throw new Error('Network response was not ok');
